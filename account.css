@@ -1,0 +1,37 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background: rgb(231,221,229); font-family: Verdana, sans-serif; }
+
+/* SAME NAV ON ALL PAGES */
+.navbar { background:#e2cad7; padding:1rem 2rem; position:sticky; top:0; z-index:100; }
+.nav-links { list-style:none; display:flex; gap:1.5rem; justify-content:center; }
+.nav-links a { color:rgb(169,46,140); text-decoration:none; font-size:1.1rem; }
+.nav-links a:hover { color:black; }
+
+h1 { color:#d37daa; font-size:2.2rem; text-align:center; margin:2rem 0; }
+
+.account-container { display:flex; justify-content:center; padding:1rem; }
+.account-form {
+  background:white; width:90%; max-width:450px; padding:2rem;
+  border-radius:12px; display:flex; flex-direction:column; gap:0.8rem;
+}
+.account-form input {
+  padding:0.8rem; border:1px solid #e2cad7; border-radius:8px; width:100%;
+}
+.btn-group { display:flex; gap:1rem; margin-top:1rem; }
+.btn-group input, .btn-group button {
+  flex:1; padding:0.9rem; border:none; border-radius:8px; cursor:pointer; transition:0.3s;
+}
+.btn-group input { background:#eee; }
+.account-form button { background:#d37daa; color:white; }
+
+/* For marks - pseudo classes */
+.account-form button:hover { background:#a92e8c; }
+.btn-group input:hover { background:#ccc; }
+.account-form input:focus { outline:none; border-color:#d37daa; }
+.form-link a:hover { color:#a92e8c; }
+
+@media (max-width:768px) {
+  .nav-links { flex-direction:column; align-items:center; }
+  h1 { font-size:1.6rem; }
+  .btn-group { flex-direction:column; }
+}

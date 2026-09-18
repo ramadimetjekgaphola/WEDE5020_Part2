@@ -1,0 +1,45 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background: rgb(231,221,229); font-family: Verdana, sans-serif; }
+.navbar { background:#e2cad7; padding:1rem 2rem; }
+.nav-links { list-style:none; display:flex; gap:1.5rem; justify-content:center; }
+.nav-links a { color:rgb(169,46,140); text-decoration:none; }
+.nav-links a:hover { color:black; }
+
+h1 { color:#d37daa; text-align:center; margin:2rem 0 0.5rem; }
+.contact-top { text-align:center; margin-bottom:2rem; }
+
+.contact-container {
+  background:white;
+  width:90%;
+  max-width:600px;
+  margin:0 auto 3rem auto;
+  padding:2rem;
+  border-radius:12px;
+}
+
+.contact-container input, 
+.contact-container select, 
+.contact-container textarea {
+  width:100%;
+  padding:0.8rem;
+  margin:0.5rem 0 1rem 0;
+  border:1px solid #e2cad7;
+  border-radius:8px;
+}
+
+.contact-container button {
+  width:100%;
+  padding:0.9rem;
+  background:#d37daa;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.contact-container button:hover { background:#a92e8c; }
+.contact-container input:focus { border-color:#d37daa; outline:none; }
+
+@media (max-width:768px) {
+  .nav-links { flex-direction:column; align-items:center; }
+}
